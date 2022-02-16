@@ -9,7 +9,7 @@ interface TitleProps {
 
 export const Title = ({ as, fontSize, children }: TitleProps) => {
   const TitleStyle = styled(as)`
-    font-size: ${fontSize ? `${fontSize}rem` : `4rem`};
+    font-size: ${fontSize ? `${fontSize}rem` : `2.5rem`};
   `;
   return <TitleStyle>{children}</TitleStyle>;
 };

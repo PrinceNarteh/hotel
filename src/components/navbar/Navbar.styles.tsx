@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
-  height: 10rem;
+  height: 8rem;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const Logo = styled.div`
@@ -28,7 +29,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   font-size: 1.5rem;
   display: inline-block;
-  line-height: 80px;
+  line-height: 6rem;
   padding: 1rem 2rem;
   cursor: pointer;
 `;
