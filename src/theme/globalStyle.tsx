@@ -1,11 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    *,*::before,**::after{
+    *,
+    *::before,
+    *::after{
         margin: 0;
         padding: 0;
         outline: none;
         box-sizing: border-box;
+        font-family: 'Armata' , serif;
     }
 
      html {
