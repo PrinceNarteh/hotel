@@ -5,7 +5,6 @@ function App() {
   return (
     <div>
       <Home />
-      <h1>Hotel Site</h1>
     </div>
   );
 }
