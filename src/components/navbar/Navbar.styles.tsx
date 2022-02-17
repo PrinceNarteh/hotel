@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 5rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   z-index: 1;
 `;
 

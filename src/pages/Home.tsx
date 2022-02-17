@@ -1,5 +1,7 @@
 import React from "react";
-import { Header } from "../components/home/header/Header";
+import { Facts } from "../components/home/Facts";
+import { Header } from "../components/home/Header";
+import { Report } from "../components/home/Report";
 import { Navbar } from "../components/navbar/Navbar";
 
 export const Home = () => {
@@ -7,6 +9,8 @@ export const Home = () => {
     <>
       <Navbar />
       <Header />
+      <Facts />
+      <Report />
     </>
   );
 };
