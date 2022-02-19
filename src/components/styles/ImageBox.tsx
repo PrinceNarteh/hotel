@@ -39,7 +39,7 @@ export const ImageBox = () => {
       <Content>
         <PriceTag>$100/Night</PriceTag>
         <div>
-          <Title as="h3" color="white">
+          <Title as="h3" color="white" margin-bottom="1rem">
             Luxury Room
           </Title>
           <Card>
@@ -54,8 +54,7 @@ export const ImageBox = () => {
 const ImageContainer = styled.div`
   overflow: hidden;
   position: relative;
-  width: 500px;
-  height: 500px;
+
   border-radius: 2rem;
 `;
 
