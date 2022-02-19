@@ -5,14 +5,14 @@ import { Section } from "../styles/Section";
 import { Title } from "../styles/Title";
 import { Paragraph } from "../styles/Paragraph";
 import { Image } from "../styles/Image";
-import Welcome from "../../assets/welcome.jpg";
+import Beach from "../../assets/beach.jpg";
 
 export const Report = () => {
   return (
     <Section padding="10rem 0">
       <Container>
         <Box>
-          <Image src={Welcome} />
+          <Image src={Beach} />
           <Content>
             <Title as="h3" fontSize={4}>
               Beach Hotel More than a stay
