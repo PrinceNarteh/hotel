@@ -9,6 +9,7 @@ import { RiRestaurant2Line } from "react-icons/ri";
 import { FaSwimmer } from "react-icons/fa";
 import { BiSpa } from "react-icons/bi";
 import { GiSuitcase } from "react-icons/gi";
+import Beach from "../../assets/beach.jpg";
 
 interface CardProps {
   icon: React.ReactNode;
@@ -52,27 +53,27 @@ const Card = ({ icon, title, subtitle }: CardProps) => {
 
 export const Services = () => {
   return (
-    <Section background-color="#fff">
+    <Section background-color="#fff" padding="5rem 0">
       <Container fluid>
         <SectionHeader title="Services" />
       </Container>
-      <Container fluid>
-        <Column>
-          {services.map((service, idx) => (
-            <Card key={idx} {...service} />
-          ))}
-        </Column>
-      </Container>
+      <ServicesContainer fluid>
+        <>
+          <Column flex={1} flex-shrink={0}>
+            {services.map((service, idx) => (
+              <Card key={idx} {...service} />
+            ))}
+          </Column>
+          <Column flex={4} alignItems="center">
+            <ImageCard src={Beach} />
+          </Column>
+        </>
+      </ServicesContainer>
     </Section>
   );
 };
 
-const ImageSection = styled(Row)`
-  gap: 2rem;
-  @media screen and (max-width: 50rem) {
-    flex-direction: column;
-  }
-`;
+const ServicesContainer = styled(Container)``;
 
 const CardStyle = styled.div`
   padding: 1rem;
@@ -110,4 +111,11 @@ const CardStyle = styled.div`
       font-weight: bold;
     }
   }
+`;
+
+const ImageCard = styled.img`
+  border-radius: 1rem;
+  max-height: 40rem;
+  max-width: 80rem;
+  object-fit: cover;
 `;
