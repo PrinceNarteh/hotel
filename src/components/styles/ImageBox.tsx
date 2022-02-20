@@ -19,14 +19,14 @@ const CardItem = ({
   return (
     <>
       <CardItemStyle>
-        <FaUsers size={20} />
+        <FaUsers size={15} />
         <span>{numberOfChildren} Children</span>
       </CardItemStyle>
       <CardItemStyle>
-        <FaUser size={15} /> {numberOfadult} Adult
+        <FaUser size={10} /> {numberOfadult} Adult
       </CardItemStyle>
       <CardItemStyle>
-        <FaRulerCombined size={15} /> {roomSize} ft<sup>2</sup>
+        <FaRulerCombined size={10} /> {roomSize} ft<sup>2</sup>
       </CardItemStyle>
     </>
   );
@@ -92,6 +92,6 @@ const CardItemStyle = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
 `;

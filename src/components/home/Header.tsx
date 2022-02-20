@@ -11,7 +11,7 @@ import { Title } from "../styles/Title";
 
 export const Header = () => {
   return (
-    <HeaderContainer bgColor="red" height={100}>
+    <HeaderContainer height={100} padding-bottom="4rem">
       <Container>
         <Column alignItems="flex-start">
           <Heading>Welcome Home</Heading>
@@ -25,7 +25,7 @@ export const Header = () => {
           </Paragraph>
         </Column>
         <Column>
-          <Image src={HeaderImg} />
+          <HeaderImage src={HeaderImg} />
         </Column>
       </Container>
     </HeaderContainer>
@@ -33,5 +33,9 @@ export const Header = () => {
 };
 
 const HeaderContainer = styled(Section)`
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 6rem);
+`;
+
+const HeaderImage = styled(Image)`
+  border-bottom-left-radius: 5rem;
 `;

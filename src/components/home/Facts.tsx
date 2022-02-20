@@ -6,7 +6,7 @@ import { Title } from "../styles/Title";
 
 export const Facts = () => {
   return (
-    <Section padding="5rem 0">
+    <Section padding="5rem 0" background-color="#fff">
       <Container>
         <Card>
           <Title as="h6" fontSize={4} margin-bottom="1rem">
