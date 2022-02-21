@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../components/footer/Footer";
 import { Facts } from "../components/home/Facts";
 import { FavouriteRooms } from "../components/home/FavouriteRooms";
 import { Header } from "../components/home/Header";
@@ -15,6 +16,7 @@ export const Home = () => {
       <Report />
       <FavouriteRooms />
       <Services />
+      <Footer />
     </>
   );
 };
