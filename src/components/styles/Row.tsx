@@ -7,6 +7,7 @@ interface RowProps {
 export const Row = styled.div`
   display: flex;
   align-items: center;
+
   ${({ gap }: RowProps) =>
     gap &&
     css`
