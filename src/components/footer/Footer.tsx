@@ -1,11 +1,16 @@
 import React from "react";
-import { BiHotel } from "react-icons/bi";
+import {
+  BiEnvelope,
+  BiHotel,
+  BiLocationPlus,
+  BiPhoneCall,
+} from "react-icons/bi";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
 import { Column } from "../styles/Column";
 import { Container } from "../styles/Container";
 import { Section } from "../styles/Section";
-import { BiEnvelope, BiPhoneCall, BiLocationPlus } from "react-icons/bi";
 
 const Item = ({ icon, desc }: { icon: React.ReactNode; desc: string }) => {
   const ItemStyle = styled.div`
@@ -15,13 +20,13 @@ const Item = ({ icon, desc }: { icon: React.ReactNode; desc: string }) => {
 
     .icon {
       margin: 1rem 2rem 1rem 0;
-      font-size: 3rem;
+      font-size: 2rem;
       display: flex;
       align-items: center;
     }
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   `;
   return (
@@ -53,7 +58,16 @@ export const Footer = () => {
           <Head>
             <h6>Useful Links</h6>
           </Head>
-          <Content></Content>
+          <Content>
+            <FooterLinksSection>
+              <FooterLink to="#">About Us</FooterLink>
+              <FooterLink to="#">Rooms</FooterLink>
+              <FooterLink to="#">Services</FooterLink>
+              <FooterLink to="#">Contact</FooterLink>
+              <FooterLink to="#">Gallery</FooterLink>
+              <FooterLink to="#">Blog</FooterLink>
+            </FooterLinksSection>
+          </Content>
         </FooterColumn>
         <FooterColumn>
           <Head>
@@ -91,3 +105,16 @@ const Head = styled.div`
 `;
 
 const Content = styled.div``;
+const FooterLinksSection = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+const FooterLink = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  flex: 1;
+  flex-basis: 15rem;
+`;
